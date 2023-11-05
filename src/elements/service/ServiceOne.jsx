@@ -3,18 +3,18 @@ import React, { Component } from "react";
 const ServiceList = [
     {
         icon: '01',
-        title: 'Business Stratagy',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: 'Digital identity creation',
+        description: 'Crafting Iconic Identities. Elevate your brand with our expert logo and digital identity design. Your vision, our creativity.'
     },
     {
         icon: '02',
         title: 'Website Development',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        description: 'Transforming Ideas into Stunning Websites. We specialize in web development that brings your vision to life. Your online success starts here.'
     },
     {
         icon: '03',
-        title: 'Marketing & Reporting',
-        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+        title: 'User Experience (UX) Design',
+        description: 'Elevate User Experiences. Our UX design expertise enhances usability and satisfaction, ensuring your digital products delight and engage users.'
     },
 ]
 

@@ -83,6 +83,27 @@ class Header extends Component{
                                         <li><Link to="/interactive-agency">Interactive Agency</Link></li>
                                     </ul>
                                 </li>
+                                <li className="has-droupdown"><Link to="#">Portfolio</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/main-demo">Main Demo</Link></li>
+                                        <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
+                                        <li><Link to="/creative-agency">Creative Agency</Link></li>
+                                        <li><Link to="/creative-landing">Creative One Page</Link></li>
+                                        <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
+                                        <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
+                                        <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
+                                        <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
+                                        <li><Link to="/digital-agency">Frankfurt Web Services</Link></li>
+                                        <li><Link to="/startup">Startup</Link></li>
+                                        <li><Link to="/paralax">Paralax</Link></li>
+                                        <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
+                                        <li><Link to="/business">Business</Link></li>
+                                        <li><Link to="/home-particles">Home Particles</Link></li>
+                                        <li><Link to="/studio-agency">Studio Agency</Link></li>
+                                        <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
+                                        <li><Link to="/interactive-agency">Interactive Agency</Link></li>
+                                    </ul>
+                                </li>
                                 <li className="has-droupdown"><Link to="/service" >Service</Link>
                                     <ul className="submenu">
                                         <li><Link to="/service2">Service2</Link></li>
@@ -122,11 +143,7 @@ class Header extends Component{
                                 <li><Link to="/contact" >Contact</Link></li>
                             </ul>
                         </nav>
-                        <div className="header-btn">
-                            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                <span>buy now</span>
-                            </a>
-                        </div>
+
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
                             <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
