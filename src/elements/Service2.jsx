@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import Breadcrumb from "../elements/common/Breadcrumb";
+import Breadcrumb from "./common/Breadcrumb";
 import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp } from "react-icons/fi";
 import ScrollToTop from 'react-scroll-up';
 import Header from "../component/header/Header";
@@ -39,15 +39,15 @@ const ServiceList = [
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
 ]
-class Service extends Component{
+class Service2 extends Component{
     render(){
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Service' />
+                <PageHelmet pageTitle='Service2' />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Breadcrump Area */}
-                <Breadcrumb title={'Service'}   />
+                <Breadcrumb title={'Service2'}   />
                 {/* End Breadcrump Area */}
 
                 {/* Start Service Area */}
@@ -56,7 +56,7 @@ class Service extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center mb--30">
-                                    <h2>Digital Marketing</h2>
+                                    <h2>Digital Marketing!!!</h2>
                                     <p>There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p>
                                 </div>
                             </div>
@@ -193,4 +193,4 @@ class Service extends Component{
         )
     }
 }
-export default Service;
+export default Service2;

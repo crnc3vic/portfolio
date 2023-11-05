@@ -33,6 +33,7 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 // Element Layout
 import Service from "./elements/Service";
+import Service2 from "./elements/Service2";
 import ServiceDetails from "./elements/ServiceDetails";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
@@ -89,6 +90,7 @@ class Root extends Component{
 
                         {/* Element Layot */}
                         <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/service2`} component={Service2}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/>
