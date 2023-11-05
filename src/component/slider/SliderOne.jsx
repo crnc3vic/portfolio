@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ServiceOne from "../../elements/service/ServiceOne";
+import content from "../../Content.json";
 
 class SliderOne extends Component {
   render() {
@@ -11,7 +12,7 @@ class SliderOne extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner">
-                                <h1 className="title theme-gradient">Frankfurt <br /> web services </h1>
+                                <h1 className="title theme-gradient">{content.homepage.title} </h1>
                             </div>
                         </div>
                     </div>

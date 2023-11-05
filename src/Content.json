@@ -1,0 +1,48 @@
+{
+    "homepage": {
+        "title": "Frankfurt Web Services"
+    },
+    "about": {
+        "bigColumn": {
+            "title": "About",
+            "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
+        },
+        "smallColumnLeft": {
+            "title": " Our philosophy",
+            "content": "Our design philosophy revolves around user-centricity. We prioritize aesthetics and functionality, ensuring seamless experiences that engage visitors. Every pixel we craft adds value to your online presence." 
+        },
+        "smallColumnRight": {
+            "title": "Our skillset",
+            "content": "Technology is our toolbox. We harness the latest web development tools and trends to build websites that perform flawlessly across devices, delivering optimal speed, security, and scalability." 
+        }
+
+    },
+    "services": {
+        "title": "Services",
+        "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
+        "individualServices": {
+            "service1": {
+                "title": "Custom Web Design",
+                "description": "Craft visually appealing and user-friendly websites tailored to your brand's unique identity."
+            },
+            "service2": {
+                "title": "Front-End Development",
+                "description": "Create interactive and responsive user interfaces using the latest technologies and best practices."
+            },
+            "service3": {
+                "title": "Back-End Development",
+                "description": "Build robust and scalable server-side solutions to power your web applications and services."
+            },
+            "service4": {
+                "title": "E-Commerce Solutions",
+                "description": "Optimize online shopping experiences with secure and feature-rich e-commerce websites."
+            }
+        }
+        
+    },
+    "contact": {
+        "title": "Contact Us",
+        "email": "contact@example.com",
+        "phone": "+123456789"
+    }
+}

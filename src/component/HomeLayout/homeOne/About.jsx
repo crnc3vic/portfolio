@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import content from "../../../Content.json";
 
 class About extends Component{
     render(){
-        let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+        let title = content.about.bigColumn.title,
+        description = content.about.bigColumn.content;
         return(
             <React.Fragment>
                 <div className="about-wrapper">
@@ -12,7 +13,7 @@ class About extends Component{
 
                             <div className="col-lg-5 col-md-12">
                                 <div className="thumbnail">
-                                    <img className="w-100" src="/assets/images/about/about-1.jpg" alt="About Images"/>
+                                    <img className="w-100" src="/assets/images/about/FrankfurtAmMainDev.webp" alt="About Images"/>
                                 </div>
                             </div>
 
@@ -25,14 +26,14 @@ class About extends Component{
                                     <div className="row mt--30 mt_sm--10">
                                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
-                                                <h3 className="title">Who we are</h3>
-                                                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                <h3 className="title">{content.about.smallColumnLeft.title}</h3>
+                                                <p>{content.about.smallColumnLeft.content}</p>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
-                                                <h3 className="title">Who we are</h3>
-                                                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                            <h3 className="title">{content.about.smallColumnRight.title}</h3>
+                                                <p>{content.about.smallColumnRight.content}</p>
                                             </div>
                                         </div>
                                     </div>

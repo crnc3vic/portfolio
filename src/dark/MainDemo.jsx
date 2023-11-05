@@ -13,6 +13,7 @@ import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
+import content from "../Content.json";
 
 class MainDemo extends Component{
     render(){
