@@ -37,15 +37,15 @@ class Header extends Component{
         const { logo, color='default-color' } = this.props;
         let logoUrl;
         if(logo === 'light'){
-            logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Frankfurt Web Services" />;
         }else if(logo === 'dark'){
-            logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Frankfurt Web Services" />;
         }else if(logo === 'symbol-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Frankfurt Web Services" />;
         }else if(logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Frankfurt Web Services" />;
         }else{
-            logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-fws.png" width="150px" alt="Frankfurt Web Services." />;
         }
 
         
@@ -72,7 +72,7 @@ class Header extends Component{
                                         <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
                                         <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
                                         <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
-                                        <li><Link to="/digital-agency">Digital Agency</Link></li>
+                                        <li><Link to="/digital-agency">Frankfurt Web Services</Link></li>
                                         <li><Link to="/startup">Startup</Link></li>
                                         <li><Link to="/paralax">Paralax</Link></li>
                                         <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
