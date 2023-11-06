@@ -252,7 +252,7 @@ class Business extends Component{
                         <div className="row align-items-end">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center">
-                                    <h2 className="title">Latest News</h2>
+                                    <h2 className="title">Latest News!</h2>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                                 </div>
                             </div>
