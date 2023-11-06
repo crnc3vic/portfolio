@@ -44,5 +44,37 @@
         "title": "Contact Us",
         "email": "contact@example.com",
         "phone": "+123456789"
+    },
+    "portfolio": {
+        "list":{
+            "0":{
+                "image":"image-1",
+                "category":"Development",
+                "title":"1 Getting tickets to the big show"
+            },
+            "1":{
+                "image":"image-2",
+                "category":"Development",
+                "title":"2 Getting tickets to the big show"
+            },
+            "2":{
+                "image":"image-3",
+                "category":"Development",
+                "title":"3 Getting tickets to the big show"
+            },
+            "3":{
+                "image":"image-4",
+                "category":"Development",
+                "title":"4 Getting tickets to the big show"
+            },
+            "4":{
+                "image":"image-4",
+                "category":"Development",
+                "title":"5 Getting tickets to the big show"
+            }
+        },
+        "title": "Our works",
+        "description":"Our web development projects that showcase our expertise and creativity in crafting online experiences."
     }
+    
 }
