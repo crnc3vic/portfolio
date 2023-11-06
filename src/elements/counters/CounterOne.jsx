@@ -1,6 +1,7 @@
 import React, { Component , Fragment } from "react";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import content from "../../Content.json";
 
 
 
@@ -17,17 +18,18 @@ class CounterOne extends Component{
     render(){
         let Data = [
             {
-                countNum : 199,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+                countNum : content.counterHomepage.columns[1].number,
+                countTitle: content.counterHomepage.columns[1].description,
             },
             {
-                countNum : 575,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+                countNum : content.counterHomepage.columns[2].number,
+                countTitle: content.counterHomepage.columns[2].description,
             },
-            {
-                countNum : 69,
-                countTitle: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
-            },
+            
+                {
+                    countNum : content.counterHomepage.columns[3].number,
+                    countTitle: content.counterHomepage.columns[3].description,
+                }
         ];
 
         return(

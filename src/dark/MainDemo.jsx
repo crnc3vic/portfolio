@@ -13,6 +13,7 @@ import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
+import content from "../Content.json";
 
 class MainDemo extends Component{
     render(){
@@ -56,7 +57,7 @@ class MainDemo extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
+                                    <h3 className="fontWeight500">{content.counterHomepage.title}</h3>
                                 </div>
                             </div>
                         </div>
