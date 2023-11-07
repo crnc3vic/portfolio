@@ -1,12 +1,14 @@
 import React from 'react';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import content from "../../Content.json";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
+    {Social: <FaFacebookF /> , link: content.social.facebook},
+    {Social: <FaLinkedinIn /> , link: content.social.linkedin},
+    {Social: <FaInstagram /> , link: content.social.instagram},
+    {Social: <FaTwitter /> , link: content.social.twitter},
 ]
+const currentYear = new Date().getFullYear();
 
 const FooterTwo = () => {
     return (
@@ -34,7 +36,7 @@ const FooterTwo = () => {
                     <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                         <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
                             <div className="text">
-                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                            <p>Copyright © {currentYear} {content.homepage.title} All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

@@ -9,57 +9,27 @@ import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 import ServiceList from "../elements/service/ServiceList";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
+import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import Team from "../elements/Team";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import FooterTwo from "../component/footer/FooterTwo";
 import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
+import content from "../Content.json";
 
 const SlideList = [
     {
         textPosition: 'text-center',
         category: '',
-        title: 'Creative One Page',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
+        title: content.name,
+        description: content.description,
+        buttonText: content.footer.columns.second.contact,
         buttonLink: '/contact'
     }
 ]
 
-const list = [
-    {
-        image: 'image-1',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-2',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    }
-]
-
+const portfolioList = Object.values(content.portfolio.list);
 class HomeParticles extends Component{
     constructor(props) {
         super(props);
@@ -105,47 +75,55 @@ class HomeParticles extends Component{
             <Fragment>
                 <Helmet pageTitle="Home Particles" />
 
-                {/* Start Header Area  */}
-                <header className="header-area formobile-menu header--fixed default-color">
-                    <div className="header-wrapper" id="header-wrapper">
-                        <div className="header-left">
-                            <div className="logo">
-                                <a href="/">
-                                    <img className="logo-1" src="/assets/images/logo/logo-light.png" alt="Logo Images"/>
-                                    <img className="logo-2" src="/assets/images/logo/logo-all-dark.png" alt="Logo Images"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="header-right">
-                            <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home','service', 'about', 'portfolio','team','testimonial','blog', 'contact']} currentClassName="is-current" offset={-200}>
-                                    <li><a href="#home">Home</a></li>
-                                    <li><a href="#service">Service</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#team">Team</a></li>
-                                    <li><a href="#testimonial">Testimonial</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </Scrollspy>
-                            </nav>
-                            <div className="header-btn">
-                                <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                    <span>buy now</span>
-                                </a>
-                            </div>
-                            {/* Start Humberger Menu  */}
-                            <div className="humberger-menu d-block d-lg-none pl--20">
-                                <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
-                            </div>
-                            {/* End Humberger Menu  */}
-                            <div className="close-menu d-block d-lg-none">
-                                <span onClick={this.CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                {/* End Header Area  */}
+{/* Start Header Area  */}
+<header className="header-area formobile-menu header--fixed default-color">
+    <div className="header-wrapper" id="header-wrapper">
+        <div className="header-left">
+            <div className="logo">
+                <a href="/">
+                    <img className="logo-1" src="/assets/images/logo/logo-light.png" alt="Logo Images"/>
+                    <img className="logo-2" src="/assets/images/logo/logo-all-dark.png" alt="Logo Images"/>
+                </a>
+            </div>
+        </div>
+        <div className="header-right">
+            <nav className="mainmenunav d-lg-block">
+                {/* Dynamically generated menu from JSON content */}
+                <Scrollspy className="mainmenu" items={content.menu.map(item => item.name.toLowerCase())} currentClassName="is-current" offset={-200}>
+                    {content.menu.map((item, index) => (
+                        <li key={index} className={`menu-item ${item.submenu ? "has-droupdown" : ""}`}>
+                            <a href={item.link}>{item.name}</a>
+                            {item.submenu && (
+                                <ul className="submenu">
+                                    {item.submenu.map((subItem, subIndex) => (
+                                        <li key={subIndex}>
+                                            <a href={subItem.link}>{subItem.name}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
+                </Scrollspy>
+            </nav>
+            <div className="header-btn">
+                <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
+                    <span>buy now</span>
+                </a>
+            </div>
+            {/* Start Humberger Menu  */}
+            <div className="humberger-menu d-block d-lg-none pl--20">
+                <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
+            </div>
+            {/* End Humberger Menu  */}
+            <div className="close-menu d-block d-lg-none">
+                <span onClick={this.CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
+            </div>
+        </div>
+    </div>
+</header>
+{/* End Header Area  */}
+
 
                 {/* Start Slider Area   */}
                 
@@ -314,45 +292,40 @@ class HomeParticles extends Component{
 
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
-                    <div className="rn-slick-dot">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                                        <h2 className="title">Our Portfolio</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="slick-space-gutter--15 slickdot--20">
-                                        <Slider {...slickDot}>
-                                            {list.map((value , index) => (
-                                                <div className="portfolio" key={index}>
-                                                    <div className="thumbnail-inner">
-                                                        <div className={`thumbnail ${value.image}`}></div>
-                                                        <div className={`bg-blr-image ${value.image}`}></div>
+            <div className="rn-slick-dot">
+                <div className="container">
+                    <div className="row">
+                        {/* ... Section Title ... */}
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="slick-space-gutter--15 slickdot--20">
+                                <Slider {...slickDot}>
+                                    {portfolioList.map((value, index) => (
+                                        <div className="portfolio" key={index}>
+                                            <div className="thumbnail-inner">
+                                                <div className={`thumbnail ${value.image}`}></div>
+                                                <div className={`bg-blr-image ${value.image}`}></div>
+                                            </div>
+                                            <div className="content">
+                                                <div className="inner">
+                                                    <p>{value.category}</p>
+                                                    <h4><a href="/portfolio-details">{value.title}</a></h4>
+                                                    <div className="portfolio-button">
+                                                        <a className="rn-btn" href="/portfolio-details">Case Study</a>
                                                     </div>
-                                                    <div className="content">
-                                                        <div className="inner">
-                                                            <p>{value.category}</p>
-                                                            <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                                            <div className="portfolio-button">
-                                                                <a className="rn-btn" href="/portfolio-details">Case Study</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <Link className="link-overlay" to="/portfolio-details"></Link>
                                                 </div>
-                                            ))}
-                                        </Slider>
-                                    </div>
-                                </div>
+                                            </div>
+                                            <Link className="link-overlay" to="/portfolio-details"></Link>
+                                        </div>
+                                    ))}
+                                </Slider>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
                 {/* End Portfolio Area */}
 
 

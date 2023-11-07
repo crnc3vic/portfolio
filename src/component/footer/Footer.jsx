@@ -9,6 +9,7 @@ const SocialShare = [
     {Social: <FaTwitter /> , link: content.social.twitter},
 ]
 
+const currentYear = new Date().getFullYear();
 class Footer extends Component{
     render(){
         return(
@@ -48,8 +49,8 @@ class Footer extends Component{
                                                 <h4>{content.footer.columns.second.title}</h4>
                                                 <ul className="ft-link">
                                                 <li><a href={`mailto:${content.footer.columns.second.email}`}>{content.footer.columns.second.email}</a></li>
-                                                    <li><a href="mailto:hr@example.com">{content.footer.columns.second.phone}</a></li>
-                                                </ul>
+                                                <li><a href={`tel:${content.footer.columns.second.phone}`}>{content.footer.columns.second.phone}</a></li>
+``                                                </ul>
 
                                                 <div className="social-share-inner">
                                                     <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
@@ -64,7 +65,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                                <p>Copyright © {currentYear} {content.homepage.title} All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>

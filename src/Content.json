@@ -1,176 +1,258 @@
 {
-    "homepage": {
-        "title": "Frankfurt Web Services"
-    },
-    "about": {
-        "bigColumn": {
-            "title": "About",
-            "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
-        },
-        "smallColumnLeft": {
-            "title": " Our philosophy",
-            "content": "Our design philosophy revolves around user-centricity. We prioritize aesthetics and functionality, ensuring seamless experiences that engage visitors. Every pixel we craft adds value to your online presence."
-        },
-        "smallColumnRight": {
-            "title": "Our skillset",
-            "content": "Technology is our toolbox. We harness the latest web development tools and trends to build websites that perform flawlessly across devices, delivering optimal speed, security, and scalability."
-        }
-    },
-    "services": {
-        "title": "Services",
-        "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
-        "individualServices": {
-            "service1": {
-                "title": "Custom Web Design",
-                "description": "Craft visually appealing and user-friendly websites tailored to your brand's unique identity."
-            },
-            "service2": {
-                "title": "Front-End Development",
-                "description": "Create interactive and responsive user interfaces using the latest technologies and best practices."
-            },
-            "service3": {
-                "title": "Back-End Development",
-                "description": "Build robust and scalable server-side solutions to power your web applications and services."
-            },
-            "service4": {
-                "title": "E-Commerce Solutions",
-                "description": "Optimize online shopping experiences with secure and feature-rich e-commerce websites."
-            }
-        }
-    },
-    "contact": {
-        "title": "Contact Us",
-        "email": "contact@example.com",
-        "phone": "+123456789"
-    },
-    "portfolio": {
-        "list": {
-            "0": {
-                "image": "image-1",
-                "category": "Development",
-                "title": "1 Getting tickets to the big show"
-            },
-            "1": {
-                "image": "image-2",
-                "category": "Development",
-                "title": "2 Getting tickets to the big show"
-            },
-            "2": {
-                "image": "image-3",
-                "category": "Development",
-                "title": "3 Getting tickets to the big show"
-            },
-            "3": {
-                "image": "image-4",
-                "category": "Development",
-                "title": "4 Getting tickets to the big show"
-            },
-            "4": {
-                "image": "image-4",
-                "category": "Development",
-                "title": "5 Getting tickets to the big show"
-            }
-        },
-        "title": "Our works",
-        "description": "Our web development projects that showcase our expertise and creativity in crafting online experiences."
-    },
-    "counterHomepage": {
-        "title": "Numbers that speak about us",
-        "columns": {
-            "1": {
-                "number": "548",
-                "description": "Projects completed"
-            },
-            "2": {
-                "number": "127",
-                "description": "Satisfied clients"
-            },
-            "3": {
-                "number": "8934",
-                "description": "Cups of coffee consumed"
-            }
-        }
-    },
-    "testimonials": {
-        "testimonial1": {
-            "content": "I am extremely satisfied with the services provided by Frankfurt Web Services. They created a stunning website for my business that perfectly represents our brand. The attention to detail and professionalism shown by the team was exceptional.",
-            "author": "John Smith",
-            "position": "CEO, ABC Company"
-        },
-        "testimonial2": {
-            "content": "Working with Frankfurt Web Services has been a game-changer for my online presence. Their custom web design service transformed my outdated website into a modern and user-friendly platform. I highly recommend their expertise to anyone seeking professional web development solutions.",
-            "author": "Emily Johnson",
-            "position": "Marketing Manager, XYZ Corporation"
-        },
-        "testimonial3": {
-            "content": "I couldn't be happier with the results achieved by Frankfurt Web Services. Their front-end development skills helped us create a visually appealing and engaging user interface for our web application. Their commitment to quality and timely delivery is commendable.",
-            "author": "Michael Anderson",
-            "position": "CTO, QWERTY Tech"
-        }
-    },
-          "blog": {
-          "title": "Latest news",
-          "description": "Stay Informed with Our Web Dev Blog",
-          "buttons": {
-            "readMore": "Read More",
-            "viewAllNews": "View All News"
-          },
+  "name": "Frankfurt Web Services",
+  "description": "Building robust and scalable websites for your business",
+  "logoLight": "/assets/images/logo/logo-fws.png",
 
-          "posts": [
-              {
-                  "images": "01",
-                  "title": "Getting tickets to the big show",
-                  "category": "Development"
-              },
-              {
-                  "images": "02",
-                  "title": "A big ticket gone to be an interesting",
-                  "category": "Management"
-              },
-              {
-                  "images": "03",
-                  "title": "The Home of the Future Could Bebes",
-                  "category": "Design"
-              },
-              {
-                  "images": "04",
-                  "title": "Getting tickets to the big show",
-                  "category": "Development"
-              },
-              {
-                  "images": "01",
-                  "title": "A big ticket gone to be an interesting",
-                  "category": "Management"
-              },
-              {
-                  "images": "02",
-                  "title": "The Home of the Future Could Bebes",
-                  "category": "Design"
-              }
-          ]
+  "menu": [
+    {
+      "name": "Home",
+      "link": "#"
+    },
+    {
+      "name": "Portfolio",
+      "link": "/",
+      "submenu": [
+        { "name": "Main Demo", "link": "/main-demo" },
+        { "name": "Dark Main Demo", "link": "/dark-main-demo" },
+        { "name": "Creative Agency", "link": "/creative-agency" },
+        { "name": "Creative One Page", "link": "/creative-landing" },
+        { "name": "Creative Portfolio", "link": "/creative-portfolio" },
+        { "name": "Personal Portfolio", "link": "/personal-portfolio" },
+        { "name": "Portfolio One Page", "link": "/portfolio-landing" },
+        { "name": "Portfolio One Page 02", "link": "/dark-portfolio-landing" },
+        { "name": "Frankfurt Web Services", "link": "/digital-agency" },
+        { "name": "Startup", "link": "/startup" },
+        { "name": "Paralax", "link": "/paralax" },
+        { "name": "Minimal Portfolio", "link": "/portfolio-home" },
+        { "name": "Business", "link": "/business" },
+        { "name": "Home Particles", "link": "/home-particles" },
+        { "name": "Studio Agency", "link": "/studio-agency" },
+        { "name": "Designer Portfolio", "link": "/designer-portfolio" },
+        { "name": "Interactive Agency", "link": "/interactive-agency" }
+      ]
+    },
+    {
+      "name": "Service",
+      "link": "/service",
+      "submenu": [
+        { "name": "Service2", "link": "/service2" },
+        { "name": "Service Details", "link": "/service-details" }
+      ]
+    },
+    {
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "name": "Pages",
+      "link": "#pages",
+      "submenu": [
+        { "name": "Blog List", "link": "/blog" },
+        { "name": "Blog Details", "link": "/blog-details" },
+        { "name": "Service", "link": "/service" },
+        { "name": "Service Details", "link": "/service-details" },
+        { "name": "Portfolio", "link": "/portfolio" },
+        { "name": "Portfolio Details", "link": "/portfolio-details" },
+        { "name": "404", "link": "/404" }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "link": "#",
+      "submenu": [
+        { "name": "Portfolio", "link": "/portfolio" },
+        { "name": "Team", "link": "/team" },
+        { "name": "Service", "link": "/service" },
+        { "name": "Video Popup", "link": "/video-popup" },
+        { "name": "Progressbar", "link": "/progressbar" },
+        { "name": "Gallery", "link": "/gallery" },
+        { "name": "Counters", "link": "/counters" },
+        { "name": "Blog List", "link": "/blog" },
+        { "name": "Clint Logo", "link": "/clint-logo" },
+        { "name": "Contact Form", "link": "/contact-form" },
+        { "name": "Google Map", "link": "/google-map" },
+        { "name": "Columns", "link": "/columns" },
+        { "name": "Pricing Table", "link": "/pricing-table" }
+      ]
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
+    }
+  ],
+
+  "homepage": {
+    "title": "Frankfurt Web Services"
+  },
+  "about": {
+    "bigColumn": {
+      "title": "About",
+      "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
+    },
+    "smallColumnLeft": {
+      "title": " Our philosophy",
+      "content": "Our design philosophy revolves around user-centricity. We prioritize aesthetics and functionality, ensuring seamless experiences that engage visitors. Every pixel we craft adds value to your online presence."
+    },
+    "smallColumnRight": {
+      "title": "Our skillset",
+      "content": "Technology is our toolbox. We harness the latest web development tools and trends to build websites that perform flawlessly across devices, delivering optimal speed, security, and scalability."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
+    "individualServices": {
+      "service1": {
+        "title": "Custom Web Design",
+        "description": "Craft visually appealing and user-friendly websites tailored to your brand's unique identity."
       },
-      "footer": {
-        "smallHeader": "Ready to do this",
-        "bigHeader": "Let's get to work",
-        "contactButton": "Contact us",
-        "columns": {
-            "first": {
-                "title": "Quick Links",
-                "work": "Work",
-                "about": "About",
-                "contact": "Contact"
-            },
-            "second": {
-                "contact": "Contact us",
-                "email": "contact@frankfurt.services",
-                "phone": "01xxxyyy"
-            }
-        }
+      "service2": {
+        "title": "Front-End Development",
+        "description": "Create interactive and responsive user interfaces using the latest technologies and best practices."
       },
-      "social": {
-        "facebook": "#",
-        "linkedin": "#",
-        "instagram": "#",
-        "twitter": "#"
+      "service3": {
+        "title": "Back-End Development",
+        "description": "Build robust and scalable server-side solutions to power your web applications and services."
+      },
+      "service4": {
+        "title": "E-Commerce Solutions",
+        "description": "Optimize online shopping experiences with secure and feature-rich e-commerce websites."
       }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "contact@example.com",
+    "phone": "+123456789"
+  },
+  "portfolio": {
+    "list": {
+      "0": {
+        "image": "image-1",
+        "category": "Development",
+        "title": "1 Getting tickets to the big show"
+      },
+      "1": {
+        "image": "image-2",
+        "category": "Development",
+        "title": "2 Getting tickets to the big show"
+      },
+      "2": {
+        "image": "image-3",
+        "category": "Development",
+        "title": "3 Getting tickets to the big show"
+      },
+      "3": {
+        "image": "image-4",
+        "category": "Development",
+        "title": "4 Getting tickets to the big show"
+      },
+      "4": {
+        "image": "image-4",
+        "category": "Development",
+        "title": "5 Getting tickets to the big show"
+      }
+    },
+    "title": "Our works",
+    "description": "Our web development projects that showcase our expertise and creativity in crafting online experiences."
+  },
+  "counterHomepage": {
+    "title": "Numbers that speak about us",
+    "columns": {
+      "1": {
+        "number": "548",
+        "description": "Projects completed"
+      },
+      "2": {
+        "number": "127",
+        "description": "Satisfied clients"
+      },
+      "3": {
+        "number": "8934",
+        "description": "Cups of coffee consumed"
+      }
+    }
+  },
+  "testimonials": {
+    "testimonial1": {
+      "content": "I am extremely satisfied with the services provided by Frankfurt Web Services. They created a stunning website for my business that perfectly represents our brand. The attention to detail and professionalism shown by the team was exceptional.",
+      "author": "John Smith",
+      "position": "CEO, ABC Company"
+    },
+    "testimonial2": {
+      "content": "Working with Frankfurt Web Services has been a game-changer for my online presence. Their custom web design service transformed my outdated website into a modern and user-friendly platform. I highly recommend their expertise to anyone seeking professional web development solutions.",
+      "author": "Emily Johnson",
+      "position": "Marketing Manager, XYZ Corporation"
+    },
+    "testimonial3": {
+      "content": "I couldn't be happier with the results achieved by Frankfurt Web Services. Their front-end development skills helped us create a visually appealing and engaging user interface for our web application. Their commitment to quality and timely delivery is commendable.",
+      "author": "Michael Anderson",
+      "position": "CTO, QWERTY Tech"
+    }
+  },
+  "blog": {
+    "title": "Latest news",
+    "description": "Stay Informed with Our Web Dev Blog",
+    "buttons": {
+      "readMore": "Read More",
+      "viewAllNews": "View All News"
+    },
+
+    "posts": [
+      {
+        "images": "01",
+        "title": "Getting tickets to the big show",
+        "category": "Development"
+      },
+      {
+        "images": "02",
+        "title": "A big ticket gone to be an interesting",
+        "category": "Management"
+      },
+      {
+        "images": "03",
+        "title": "The Home of the Future Could Bebes",
+        "category": "Design"
+      },
+      {
+        "images": "04",
+        "title": "Getting tickets to the big show",
+        "category": "Development"
+      },
+      {
+        "images": "01",
+        "title": "A big ticket gone to be an interesting",
+        "category": "Management"
+      },
+      {
+        "images": "02",
+        "title": "The Home of the Future Could Bebes",
+        "category": "Design"
+      }
+    ]
+  },
+  "footer": {
+    "smallHeader": "Ready to do this",
+    "bigHeader": "Let's get to work",
+    "contactButton": "Contact us",
+    "columns": {
+      "first": {
+        "title": "Quick Links",
+        "work": "Work",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "second": {
+        "contact": "Contact us",
+        "email": "contact@frankfurt.services",
+        "phone": "01xxxyyy"
+      }
+    }
+  },
+  "social": {
+    "facebook": "#",
+    "linkedin": "#",
+    "instagram": "#",
+    "twitter": "#"
+  }
 }
