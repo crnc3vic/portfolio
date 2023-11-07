@@ -111,6 +111,11 @@
           "blog": {
           "title": "Latest news",
           "description": "Stay Informed with Our Web Dev Blog",
+          "buttons": {
+            "readMore": "Read More",
+            "viewAllNews": "View All News"
+          },
+
           "posts": [
               {
                   "images": "01",
@@ -143,8 +148,29 @@
                   "category": "Design"
               }
           ]
+      },
+      "footer": {
+        "smallHeader": "Ready to do this",
+        "bigHeader": "Let's get to work",
+        "contactButton": "Contact us",
+        "columns": {
+            "first": {
+                "title": "Quick Links",
+                "work": "Work",
+                "about": "About",
+                "contact": "Contact"
+            },
+            "second": {
+                "contact": "Contact us",
+                "email": "contact@frankfurt.services",
+                "phone": "01xxxyyy"
+            }
+        }
+      },
+      "social": {
+        "facebook": "#",
+        "linkedin": "#",
+        "instagram": "#",
+        "twitter": "#"
       }
-  
-  
-
 }

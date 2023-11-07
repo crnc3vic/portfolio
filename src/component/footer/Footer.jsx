@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import content from "../../Content.json";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
+    {Social: <FaFacebookF /> , link: content.social.facebook},
+    {Social: <FaLinkedinIn /> , link: content.social.linkedin},
+    {Social: <FaInstagram /> , link: content.social.instagram},
+    {Social: <FaTwitter /> , link: content.social.twitter},
 ]
 
 class Footer extends Component{
@@ -18,10 +19,10 @@ class Footer extends Component{
                             <div className="col-lg-6">
                                 <div className="footer-left">
                                     <div className="inner">
-                                        <span>Ready To Do This</span>
-                                        <h2>Let's get <br /> to work</h2>
+                                        <span>{content.footer.smallHeader}</span>
+                                        <h2>{content.footer.bigHeader}</h2>
                                         <a className="rn-button-style--2" href="/contact">
-                                            <span>Contact Us</span>
+                                            <span>{content.footer.contactButton}</span>
                                         </a>
                                     </div>
                                 </div>
@@ -32,11 +33,11 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12">
                                             <div className="footer-link">
-                                                <h4>Quick Link</h4>
+                                                <h4>{content.footer.columns.first.title}</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="/portfolio">Work</a></li>
-                                                    <li><a href="/about">About</a></li>
-                                                    <li><a href="/contact">Let's Talk</a></li>
+                                                    <li><a href="/portfolio">{content.footer.columns.first.work}</a></li>
+                                                    <li><a href="/about">{content.footer.columns.first.about}</a></li>
+                                                    <li><a href="/contact">{content.footer.columns.first.contact}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -44,10 +45,10 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                                             <div className="footer-link">
-                                                <h4>Say Hello</h4>
+                                                <h4>{content.footer.columns.second.title}</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="mailto:admin@example.com">admin@example.com</a></li>
-                                                    <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                                <li><a href={`mailto:${content.footer.columns.second.email}`}>{content.footer.columns.second.email}</a></li>
+                                                    <li><a href="mailto:hr@example.com">{content.footer.columns.second.phone}</a></li>
                                                 </ul>
 
                                                 <div className="social-share-inner">

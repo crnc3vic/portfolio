@@ -86,7 +86,7 @@ class MainDemo extends Component{
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="blog-btn text-left text-lg-right mt_sm--10 mt_md--10">
-                                    <a className="btn-transparent rn-btn-dark" href="/blog"><span className="text">View All News</span></a>
+                                    <a className="btn-transparent rn-btn-dark" href="/blog"><span className="text">{content.blog.buttons.viewAllNews}</span></a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ class MainDemo extends Component{
                                             <p className="blogtype">{value.category}</p>
                                             <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
                                             <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                                                <a className="rn-btn text-white" href="/blog-details">{content.blog.buttons.readMore}</a>
                                             </div>
                                         </div>
                                     </div>
