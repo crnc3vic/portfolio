@@ -1,36 +1,37 @@
 import React ,{ Component }from "react";
 import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import content from "../../Content.json";
 
 const ServiceList = [
     {
         icon: <FiCast />,
-        title: 'Business Stratagyss',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: content.services.individualServices.service1.title,
+        description: content.services.individualServices.service1.description,
     },
     {
         icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: content.services.individualServices.service2.title,
+        description: content.services.individualServices.service2.description,
     },
     {
         icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: content.services.individualServices.service3.title,
+        description: content.services.individualServices.service3.description,
     },
-    { 
+    {
         icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: content.services.individualServices.service4.title,
+        description: content.services.individualServices.service4.description,
+    },
+    {
+        icon: <FiLayers />,
+        title: content.services.individualServices.service5.title,
+        description: content.services.individualServices.service4.description,
     },
     {
         icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: content.services.individualServices.service6.title,
+        description: content.services.individualServices.service4.description,
     }
 ]
 

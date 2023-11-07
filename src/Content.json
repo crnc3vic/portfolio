@@ -2,6 +2,7 @@
   "name": "Frankfurt Web Services",
   "description": "Building robust and scalable websites for your business",
   "logoLight": "/assets/images/logo/logo-fws.png",
+  "headerBackground" : "/assets/images/bg/paralax/bg-image-3-overlay.jpg",
 
   "menu": [
     {
@@ -98,28 +99,37 @@
       "content": "Technology is our toolbox. We harness the latest web development tools and trends to build websites that perform flawlessly across devices, delivering optimal speed, security, and scalability."
     }
   },
-  "services": {
-    "title": "Services",
-    "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
-    "individualServices": {
-      "service1": {
-        "title": "Custom Web Design",
-        "description": "Craft visually appealing and user-friendly websites tailored to your brand's unique identity."
-      },
-      "service2": {
-        "title": "Front-End Development",
-        "description": "Create interactive and responsive user interfaces using the latest technologies and best practices."
-      },
-      "service3": {
-        "title": "Back-End Development",
-        "description": "Build robust and scalable server-side solutions to power your web applications and services."
-      },
-      "service4": {
-        "title": "E-Commerce Solutions",
-        "description": "Optimize online shopping experiences with secure and feature-rich e-commerce websites."
+  
+    "services": {
+      "title": "Services",
+      "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
+      "individualServices": {
+        "service1": {
+          "title": "Custom Web Design",
+          "description": "Craft visually appealing and user-friendly websites tailored to your brand's unique identity."
+        },
+        "service2": {
+          "title": "Front-End Development",
+          "description": "Create interactive and responsive user interfaces using the latest technologies and best practices."
+        },
+        "service3": {
+          "title": "Back-End Development",
+          "description": "Build robust and scalable server-side solutions to power your web applications and services."
+        },
+        "service4": {
+          "title": "E-Commerce Solutions",
+          "description": "Optimize online shopping experiences with secure and feature-rich e-commerce websites."
+        },
+        "service5": {
+          "title": "SEO Optimization",
+          "description": "Improve your website's visibility on search engines to attract more traffic and enhance digital marketing efforts."
+        },
+        "service6": {
+          "title": "Maintenance & Support",
+          "description": "Keep your website running smoothly with our ongoing maintenance services and round-the-clock support."
+        }
       }
-    }
-  },
+    },
   "contact": {
     "title": "Contact Us",
     "email": "contact@example.com",
@@ -130,7 +140,7 @@
       "0": {
         "image": "image-1",
         "category": "Development",
-        "title": "1 Getting tickets to the big show"
+        "title": "1 Getting tickets to the big car"
       },
       "1": {
         "image": "image-2",
@@ -254,5 +264,119 @@
     "linkedin": "#",
     "instagram": "#",
     "twitter": "#"
-  }
+  },
+
+  "teamSection": {
+"title":"Our team",
+"description": "Innovative web development team, crafting responsive, user-centric websites with cutting-edge design and seamless functionality tailored to elevate your online presence.",
+  
+  "team": [
+    {
+      "images": "01",
+      "title": "Jone Due",
+      "designation": "Sr. Web Developer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        },
+        {
+          "icon": "twitter",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "images": "02",
+      "title": "Fatima Asrafi",
+      "designation": "Front-end Engineer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "images": "03",
+      "title": "Al-Amin Bali",
+      "designation": "Sr. Graphic Designer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        },
+        {
+          "icon": "twitter",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "images": "06",
+      "title": "Jone Due",
+      "designation": "Sr. Web Developer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        },
+        {
+          "icon": "twitter",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "images": "05",
+      "title": "Fatima Asrafi",
+      "designation": "Front-end Engineer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "images": "12",
+      "title": "Al-Amin Bali",
+      "designation": "Sr. Graphic Designer",
+      "socialNetwork": [
+        {
+          "icon": "facebook",
+          "url": "#"
+        },
+        {
+          "icon": "linkedin",
+          "url": "#"
+        },
+        {
+          "icon": "twitter",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}
 }

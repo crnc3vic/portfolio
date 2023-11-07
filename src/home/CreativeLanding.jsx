@@ -16,6 +16,8 @@ import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
 import content from "../Content.json";
 
+const portfolioList = Object.values(content.portfolio.list);
+
 const SlideList = [
   {
     textPosition: "text-center",
@@ -25,39 +27,6 @@ const SlideList = [
       "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
     buttonText: "Contact Us",
     buttonLink: "/contact",
-  },
-];
-
-const list = [
-  {
-    image: "image-1",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-2",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: "Getting tickets to the big show",
   },
 ];
 
@@ -300,7 +269,6 @@ class CreativeLanding extends Component {
           </div>
         </div>
         {/* End About Area */}
-
         {/* Start Portfolio Area */}
         <div
           className="portfolio-area pt--120 pb--140 bg_color--1"
@@ -308,22 +276,12 @@ class CreativeLanding extends Component {
         >
           <div className="rn-slick-dot">
             <div className="container">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                    <h2 className="title">Our Portfolio</h2>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div className="row">{/* ... Section Title ... */}</div>
               <div className="row">
                 <div className="col-lg-12">
                   <div className="slick-space-gutter--15 slickdot--20">
                     <Slider {...slickDot}>
-                      {list.map((value, index) => (
+                      {portfolioList.map((value, index) => (
                         <div className="portfolio" key={index}>
                           <div className="thumbnail-inner">
                             <div className={`thumbnail ${value.image}`}></div>
