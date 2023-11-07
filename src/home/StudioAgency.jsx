@@ -1,6 +1,8 @@
 import React, { Component , Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
+import Slider from "react-slick";
+import { slickDot } from "../page-demo/script";
 import ServiceTwo from "../elements/service/ServiceTwo";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
@@ -13,18 +15,22 @@ import FooterTwo from "../component/footer/FooterTwo";
 import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';
 import Helmet from "../component/common/Helmet";
+import content from "../Content.json";
+
 videoTagString({ src: '/assets/images/service/video.mp4', poster: '/assets/images/bg/bg-image-24.jpg' })
+
+const portfolioList = Object.values(content.portfolio.list);
 
 const SlideList = [
     {
-        textPosition: 'text-left',
-        category: '',
-        title: 'Welcome Video Studio',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    }
-]
+      textPosition: "text-center",
+      category: "",
+      title: content.name,
+      description: content.description,
+      buttonText: content.footer.columns.second.contact,
+      buttonLink: "/contact",
+    },
+  ];
 
 class StudioAgency extends Component{
     constructor () {
@@ -80,11 +86,44 @@ class StudioAgency extends Component{
                 {/* End Slider Area   */}
 
 
-                {/* Start About Area */}
-                <div className="about-area ptb--120">
-                    <AboutTwo />
+            {/* Start About Area */}
+            <div className="about-area ptb--120 bg_color--5" id="about">
+                    <div className="about-wrapper">
+                        <div className="container">
+                            <div className="row row--35 align-items-center">
+                                <div className="col-lg-5">
+                                    <div className="thumbnail">
+                                        <img className="w-100" src={content.about.image} alt="About Images"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7">
+                                    <div className="about-inner inner">
+                                        <div className="section-title">
+                                            <h2 className="title">{content.about.column.altTitle}</h2>
+                                            <p className="description">{content.about.column.description}</p>
+                                        </div>
+                                        <div className="row mt--30">
+                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <div className="about-us-list">
+                                                    <h3 className="title">{content.about.smallColumnLeft.title}</h3>
+                                                    <p>{content.about.smallColumnLeft.content}</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <div className="about-us-list">
+                                                <h3 className="title">{content.about.smallColumnRight.title}</h3>
+                                                    <p>{content.about.smallColumnRight.content}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {/* End About Area */}
+
 
                 {/* Start Service Area  */}
                 <div className="service-area ptb--80  bg_image bg_image--3">
@@ -108,7 +147,7 @@ class StudioAgency extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
+                                    <h3 className="fontWeight500">{content.counterHomepage.title}</h3>
                                 </div>
                             </div>
                         </div>
@@ -125,43 +164,41 @@ class StudioAgency extends Component{
                 </div>
                 {/* End Testimonial Area */}
 
+           
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 bg_color--1">
+                <div className="rn-blog-area pt--120 pb--140 bg_color--1" id="blog">
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6">
                                 <div className="section-title text-left">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div className="blog-btn text-left text-lg-right mt_sm--10 mt_md--10">
-                                    <a className="btn-transparent rn-btn-dark" href="/blog"><span className="text">View All News</span></a>
+                                    <h2>{content.blog.title}</h2>
+                                    <p>{content.blog.description}</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt--60 mt_sm--30">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-12" key={i}>
-                                    <div className="blog blog-style--1">
-                                        <div className="thumbnail">
-                                            <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </a>
-                                        </div>
-                                        <div className="content">
-                                            <p className="blogtype">{value.category}</p>
-                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
-                                            <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                        <div className="row mt--55 mt_sm--30 rn-slick-dot slick-space-gutter--15 slickdot--20 row--0">
+                            <div className="col-lg-12">
+                                <Slider {...slickDot}>
+                                    {PostList.map((value , i ) => (
+                                        <div className="blog blog-style--1" key={i}>
+                                            <div className="thumbnail">
+                                                <a href="/blog-details">
+                                                    <img src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
+                                                </a>
+                                            </div>
+                                            <div className="content">
+                                                <p className="blogtype">{value.category}</p>
+                                                <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
+                                                <div className="blog-btn">
+                                                    <a className="rn-btn text-white" href="/blog-details">{content.blog.buttons.readMore}</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                                    ))}
+                                </Slider>
+                            </div>
+                        </div>    
+                    </div>    
                 </div>
                 {/* End Blog Area */}
 

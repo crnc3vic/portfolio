@@ -22,19 +22,18 @@ class HeaderFour extends Component{
     }
 
     render(){
+        const { logo, color='default-color' } = this.props;
         let logoUrl;
-        if(this.props.logo === 'light'){
-            logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Trydo" />;
-        }else if(this.props.logo === 'dark'){
-            logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Trydo" />;
-        }else if(this.props.logo === 'symbol-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Trydo" />;
-        }else if(this.props.logo === 'all-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-all-dark.png" alt="Trydo" />;
-        } else if(this.props.logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Trydo" />;
+        if(logo === 'light'){
+            logoUrl = <img src={content.logoLight} width="120px" alt="Frankfurt Web Services" />;
+        }else if(logo === 'dark'){
+            logoUrl = <img src={content.logoDark} width="120px" alt="Frankfurt Web Services" />;
+        }else if(logo === 'symbol-dark'){
+            logoUrl = <img src={content.logoDark} width="120px" alt="Frankfurt Web Services" />;
+        }else if(logo === 'symbol-light'){
+            logoUrl = <img src={content.logoDark} width="120px" alt="Frankfurt Web Services" />;
         }else{
-            logoUrl = <img src="/assets/images/logo/logo.png" alt="Trydo" />;
+            logoUrl = <img src={content.logoDark} width="120px" alt="Frankfurt Web Services" />;
         }
         
         const menuItems = content.menu.map((menu, index) => (
@@ -67,8 +66,8 @@ class HeaderFour extends Component{
                             </ul>
                         </nav>
                         <div className="header-btn">
-                            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                <span>buy now</span>
+                            <a className="rn-btn" href="/contact">
+                                <span>{content.orderButton}</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu */}

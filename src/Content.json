@@ -2,7 +2,22 @@
   "name": "Frankfurt Web Services",
   "description": "Building robust and scalable websites for your business",
   "logoLight": "/assets/images/logo/logo-fws.png",
+  "logoDark": "/assets/images/logo/logo-fws-dark.png",
   "headerBackground" : "/assets/images/bg/paralax/bg-image-3-overlay.jpg",
+  "interActiveAgencyBackground": "bg_image--33",
+  "orderButton": "Order a Website",
+
+  "partners": [
+    "/assets/images/brand/brand-01.png",
+    "/assets/images/brand/brand-02.png",
+    "/assets/images/brand/brand-03.png",
+    "/assets/images/brand/brand-04.png",
+    "/assets/images/brand/brand-05.png",
+    "/assets/images/brand/brand-06.png",
+    "/assets/images/brand/brand-02.png",
+    "/assets/images/brand/brand-03.png",
+    "/assets/images/brand/brand-04.png"
+  ],
 
   "menu": [
     {
@@ -21,7 +36,7 @@
         { "name": "Personal Portfolio", "link": "/personal-portfolio" },
         { "name": "Portfolio One Page", "link": "/portfolio-landing" },
         { "name": "Portfolio One Page 02", "link": "/dark-portfolio-landing" },
-        { "name": "Frankfurt Web Services", "link": "/digital-agency" },
+        { "name": "Digital Agency", "link": "/digital-agency" },
         { "name": "Startup", "link": "/startup" },
         { "name": "Paralax", "link": "/paralax" },
         { "name": "Minimal Portfolio", "link": "/portfolio-home" },
@@ -31,7 +46,7 @@
         { "name": "Designer Portfolio", "link": "/designer-portfolio" },
         { "name": "Interactive Agency", "link": "/interactive-agency" }
       ]
-    },
+    }, 
     {
       "name": "Service",
       "link": "/service",
@@ -86,9 +101,33 @@
     "title": "Frankfurt Web Services"
   },
   "about": {
+    "image": "/assets/images/about/about-3.jpg",
     "bigColumn": {
       "title": "About",
       "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
+    },
+    "column": {
+      "altTitle": "What we do?",
+      "description": "We specialize in crafting free, high-quality business websites, with only a minimal monthly maintenance fee. Elevate your online presence with our expert solutions, tailored to meet your unique needs and boost your business success.",
+      "subTitle": "Our Working Process",
+      "whatWeDo": {
+        "first": {
+          "name": "Designing",
+          "pct": "81"
+        },
+        "second": {
+          "name": "Managment",
+          "pct": "72"
+        },
+        "third": {
+          "name": "Marketing",
+          "pct": "89"
+        },
+        "fourth": {
+          "name": "Development",
+          "pct": "57"
+        }
+      }
     },
     "smallColumnLeft": {
       "title": " Our philosophy",
@@ -132,33 +171,38 @@
     },
   "contact": {
     "title": "Contact Us",
-    "email": "contact@example.com",
-    "phone": "+123456789"
+    "description": "Get in touch with Frankfurt.services, your go-to web development team in Frankfurt am Main. We're here to help you build stunning, free business websites with affordable monthly maintenance. Reach out today to discuss your project and take the first step towards a powerful online presence.",
+    "image": "/assets/images/about/about-6.jpg"
   },
   "portfolio": {
     "list": {
       "0": {
         "image": "image-1",
+        "imagePath": "/assets/images/portfolio/portfolio-1.jpg",
         "category": "Development",
         "title": "1 Getting tickets to the big car"
       },
       "1": {
         "image": "image-2",
+        "imagePath": "/assets/images/portfolio/portfolio-2.jpg",
         "category": "Development",
         "title": "2 Getting tickets to the big show"
       },
       "2": {
         "image": "image-3",
+        "imagePath": "/assets/images/portfolio/portfolio-3.jpg",
         "category": "Development",
         "title": "3 Getting tickets to the big show"
       },
       "3": {
         "image": "image-4",
+        "imagePath": "/assets/images/portfolio/portfolio-4.jpg",
         "category": "Development",
         "title": "4 Getting tickets to the big show"
       },
       "4": {
-        "image": "image-4",
+        "image": "image-5",
+        "imagePath": "/assets/images/portfolio/portfolio-5.jpg",
         "category": "Development",
         "title": "5 Getting tickets to the big show"
       }

@@ -33,15 +33,15 @@ class Header extends Component{
         const { logo, color='default-color' } = this.props;
         let logoUrl;
         if(logo === 'light'){
-            logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />;
+            logoUrl = <img src={content.logoLight} alt="Digital Agency" />;
         }else if(logo === 'dark'){
-            logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />;
+            logoUrl = <img src={content.logoDark} alt="Digital Agency" />;
         }else if(logo === 'symbol-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Digital Agency" />;
+            logoUrl = <img src={content.logoDark} alt="Digital Agency" />;
         }else if(logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Digital Agency" />;
+            logoUrl = <img src={content.logoDark} alt="Digital Agency" />;
         }else{
-            logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
+            logoUrl = <img src={content.logoDark} width="120px" alt="Digital Agency" />;
         }
 
         const menuItems = content.menu.map((menu, index) => (
@@ -81,8 +81,8 @@ class Header extends Component{
                             </ul>
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                <span>buy now</span>
+                            <a className="rn-btn" href="/contact">
+                                <span>{content.orderButton}</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}

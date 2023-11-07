@@ -5,10 +5,13 @@ import ScrollToTop from 'react-scroll-up';
 import Slider from "react-slick";
 import { slideSlick } from "../page-demo/script";
 import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp } from "react-icons/fi";
+import ServiceList from "../elements/service/ServiceList";
+
 import Header from "../component/header/Header";
 import FooterTwo from "../component/footer/FooterTwo";
 import VideoModal from "../blocks/VideoModal";
 import BrandTwo from "../elements/BrandTwo";
+import content from "../Content.json";
 
 
 
@@ -16,53 +19,21 @@ import BrandTwo from "../elements/BrandTwo";
 const SlideList = [
     {
         textPosition: 'text-left',
-        bgImage: 'bg_image--33',
-        category: 'We are Agency',
-        title: 'Technology & innovation for Agency services.',
+        bgImage: content.interActiveAgencyBackground,
+        category: content.description,
+        title: content.name,
         description: '',
-        buttonText: 'Contact Us',
+        buttonText: content.footer.columns.second.contact,
         buttonLink: '/contact'
     },
    
 ]
 
-const ServiceList = [
-    {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiCast />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiMonitor />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-]
 
 const InteractiveAgency = () => {
     return (
         <>
-            <Helmet pageTitle="Interactive Agency" />
+            <Helmet pageTitle={content.name} />
             <Header />
             
             {/* Start Slider Area   */}
@@ -96,36 +67,36 @@ const InteractiveAgency = () => {
                             <div className="col-lg-7">
                                 <div className="about-inner inner">
                                     <div className="section-title">
-                                        <h2 className="title">What do we do?</h2>
-                                        <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.</p>
+                                        <h2 className="title">{content.about.column.altTitle}</h2>
+                                        <p className="description">{content.about.column.description}</p>
                                     </div>
                                     <div className="row mt--30">
                                         <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
-                                                <h3 className="title">Our Working Process.</h3>
+                                                <h3 className="title">{content.about.column.subTitle}</h3>
                                                 <div className="rn-progress-bar progress-bar--3">
                                                     <div className="single-progress custom-color--1">
-                                                        <h6 className="title">Designing</h6>
-                                                        <ProgressBar now={81} />
-                                                        <span className="label">81%</span>
+                                                        <h6 className="title">{content.about.column.whatWeDo.first.name}</h6>
+                                                        <ProgressBar now={content.about.column.whatWeDo.first.pct} />
+                                                        <span className="label">{content.about.column.whatWeDo.first.pct}%</span>
                                                     </div>
 
                                                     <div className="single-progress custom-color--2">
-                                                        <h6 className="title">Managment</h6>
-                                                        <ProgressBar now={72} />
-                                                        <span className="label">72%</span>
+                                                    <h6 className="title">{content.about.column.whatWeDo.second.name}</h6>
+                                                        <ProgressBar now={content.about.column.whatWeDo.second.pct} />
+                                                        <span className="label">{content.about.column.whatWeDo.second.pct}%</span>
                                                     </div>
 
                                                     <div className="single-progress custom-color--3">
-                                                        <h6 className="title">Marketing</h6>
-                                                        <ProgressBar now={89} />
-                                                        <span className="label">89%</span>
+                                                    <h6 className="title">{content.about.column.whatWeDo.third.name}</h6>
+                                                        <ProgressBar now={content.about.column.whatWeDo.third.pct} />
+                                                        <span className="label">{content.about.column.whatWeDo.third.pct}%</span>
                                                     </div>
 
                                                     <div className="single-progress custom-color--4">
-                                                        <h6 className="title">Development</h6>
-                                                        <ProgressBar now={57} />
-                                                        <span className="label">57%</span>
+                                                    <h6 className="title">{content.about.column.whatWeDo.fourth.name}</h6>
+                                                        <ProgressBar now={content.about.column.whatWeDo.fourth.pct} />
+                                                        <span className="label">{content.about.column.whatWeDo.fourth.pct}%</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,37 +116,24 @@ const InteractiveAgency = () => {
             </div>
             {/* End About Area  */}
 
-             {/* Start Service Area */}
-             <div className="service-area creative-service-wrapper pb--120 bg_color--1">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-title text-center mb--30">
-                                <h2>Our Service</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row creative-service">
-                        {ServiceList.map( (val , i) => (
-                            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                                <a className="text-center" href="/service-details">
-                                    <div className="service service__style--2">
-                                        <div className="icon">
-                                            {val.icon}
-                                        </div>
-                                        <div className="content">
-                                            <h3 className="title">{val.title}</h3>
-                                            <p>{val.description}</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+        {/* Start Service Area  */}
+        <div
+          className="service-area creative-service-wrapper ptb--120 bg_color--1"
+          id="service"
+        >
+          <div className="container">
+            <div className="row creative-service">
+              <div className="col-lg-12">
+                <ServiceList
+                  item="6"
+                  column="col-lg-4 col-md-6 col-sm-6 col-12 text-left"
+                />
+              </div>
             </div>
-            {/* End Service Area */}
+          </div>
+        </div>
+        {/* End Service Area  */}
+
 
             {/* Start Video Area  */}
             <div className="rn-section pb--120 bg_color--1">

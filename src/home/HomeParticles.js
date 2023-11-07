@@ -20,14 +20,14 @@ import content from "../Content.json";
 
 const SlideList = [
     {
-        textPosition: 'text-center',
-        category: '',
-        title: content.name,
-        description: content.description,
-        buttonText: content.footer.columns.second.contact,
-        buttonLink: '/contact'
-    }
-]
+      textPosition: "text-center",
+      category: "",
+      title: content.name,
+      description: content.description,
+      buttonText: content.footer.columns.second.contact,
+      buttonLink: "/contact",
+    },
+  ];
 
 const portfolioList = Object.values(content.portfolio.list);
 class HomeParticles extends Component{
@@ -81,8 +81,8 @@ class HomeParticles extends Component{
         <div className="header-left">
             <div className="logo">
                 <a href="/">
-                    <img className="logo-1" src="/assets/images/logo/logo-light.png" alt="Logo Images"/>
-                    <img className="logo-2" src="/assets/images/logo/logo-all-dark.png" alt="Logo Images"/>
+                    <img className="logo-1" src={content.logoLight} width="120px;" alt="Logo Images"/>
+                    <img className="logo-2" src={content.logoDark} width="180px;" alt="Logo Images"/>
                 </a>
             </div>
         </div>
@@ -107,8 +107,8 @@ class HomeParticles extends Component{
                 </Scrollspy>
             </nav>
             <div className="header-btn">
-                <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                    <span>buy now</span>
+                <a className="rn-btn" href="/contact">
+                    <span>{content.orderButton}</span>
                 </a>
             </div>
             {/* Start Humberger Menu  */}
@@ -238,8 +238,8 @@ class HomeParticles extends Component{
                         <div className="row">
                             <div className="col-lg-6 col-12">
                                 <div className="section-title text-left mb--30">
-                                    <h2>Our Services</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2>{content.services.title}</h2>
+                                    <p>{content.services.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -259,26 +259,26 @@ class HomeParticles extends Component{
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-3.jpg" alt="About Images"/>
+                                        <img className="w-100" src={content.about.image} alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="about-inner inner">
                                         <div className="section-title">
-                                            <h2 className="title">About Us</h2>
-                                            <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#alteration">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
+                                            <h2 className="title">{content.about.column.altTitle}</h2>
+                                            <p className="description">{content.about.column.description}</p>
                                         </div>
                                         <div className="row mt--30">
                                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                                 <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    <h3 className="title">{content.about.smallColumnLeft.title}</h3>
+                                                    <p>{content.about.smallColumnLeft.content}</p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                                 <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                <h3 className="title">{content.about.smallColumnRight.title}</h3>
+                                                    <p>{content.about.smallColumnRight.content}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -330,12 +330,12 @@ class HomeParticles extends Component{
 
 
                 {/* Start CounterUp Area */}
-                <div className="rn-counterup-area pt--140 p pb--110 bg_color--5">
+                <div className="rn-counterup-area pt--25 pb--110 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
+                                    <h3 className="fontWeight500">{content.counterHomepage.title}</h3>
                                 </div>
                             </div>
                         </div>
@@ -350,8 +350,8 @@ class HomeParticles extends Component{
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="section-title service-style--3 text-left mb--25 mb_sm--0">
-                                    <h2 className="title">Skilled Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">{content.teamSection.title}</h2>
+                                    <p>{content.teamSection.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -377,8 +377,8 @@ class HomeParticles extends Component{
                         <div className="row align-items-end">
                             <div className="col-lg-6">
                                 <div className="section-title text-left">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2>{content.blog.title}</h2>
+                                    <p>{content.blog.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -396,7 +396,7 @@ class HomeParticles extends Component{
                                                 <p className="blogtype">{value.category}</p>
                                                 <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
                                                 <div className="blog-btn">
-                                                    <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                                                    <a className="rn-btn text-white" href="/blog-details">{content.blog.buttons.readMore}</a>
                                                 </div>
                                             </div>
                                         </div>
