@@ -26,8 +26,8 @@ class Header extends Component {
         const logos = {
             light: <img src={content.logoLight} width="150px" alt="Frankfurt Web Services." />,
             dark: <img src={content.logoDark} alt="Frankfurt Web Services" />,
-            'symbol-dark': <img src="/assets/images/logo/logo-symbol-dark.png" alt="Frankfurt Web Services" />,
-            'symbol-light': <img src="/assets/images/logo/logo-symbol-light.png" alt="Frankfurt Web Services" />
+            'symbol-dark': <img src={content.logoDark} alt="Frankfurt Web Services" />,
+            'symbol-light': <img src={content.logoLight} alt="Frankfurt Web Services" />
         };
         return logos[logo] || logos.light;
     }

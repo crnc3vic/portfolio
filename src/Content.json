@@ -6,6 +6,7 @@
   "headerBackground" : "/assets/images/bg/paralax/bg-image-3-overlay.jpg",
   "interActiveAgencyBackground": "bg_image--33",
   "orderButton": "Order a Website",
+  "orderButtonLink":"/contact",
 
   "partners": [
     "/assets/images/brand/brand-01.png",
@@ -22,7 +23,7 @@
   "menu": [
     {
       "name": "Home",
-      "link": "#"
+      "link": "/"
     },
     {
       "name": "Portfolio",
@@ -100,12 +101,35 @@
   "homepage": {
     "title": "Frankfurt Web Services"
   },
+
+  "slides": [
+    {
+      "textPosition": "text-center",
+      "bgImage": "bg_image--21",
+      "category": "",
+      "title": "Marketing",
+      "description": "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/contact"
+    },
+    {
+      "textPosition": "text-center",
+      "bgImage": "bg_image--23",
+      "category": "",
+      "title": "Development.",
+      "description": "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/contact"
+    }
+  ],
+
   "about": {
     "image": "/assets/images/about/about-3.jpg",
     "bigColumn": {
       "title": "About",
       "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
     },
+    
     "column": {
       "altTitle": "What we do?",
       "description": "We specialize in crafting free, high-quality business websites, with only a minimal monthly maintenance fee. Elevate your online presence with our expert solutions, tailored to meet your unique needs and boost your business success.",
@@ -255,7 +279,7 @@
     "posts": [
       {
         "images": "01",
-        "title": "Getting tickets to the big show",
+        "title": "! Getting tickets to the big show",
         "category": "Development"
       },
       {

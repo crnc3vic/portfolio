@@ -10,13 +10,14 @@ import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
+import content from "../Content.json";
 
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Welcome to my World',
-        description: '',
-        buttonText: '',
+        title: content.name,
+        description: content.description,
+        buttonText: content.footer.columns.second.contact,
         buttonLink: ''
     }
 ]
@@ -28,7 +29,7 @@ const PortfolioLanding = () => {
         <div className="active-dark">
             <Helmet pageTitle="Portfolio Landing" />
 
-            <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+            <HeaderThree homeLink="/" logo="symbol-light" color="color-black"/>
             {/* Start Slider Area   */}
             <div id="home" className="fix">
                 <div className="slider-wrapper">

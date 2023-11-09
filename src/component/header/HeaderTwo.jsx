@@ -81,7 +81,7 @@ class Header extends Component{
                             </ul>
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="/contact">
+                            <a className="rn-btn" href={content.orderButtonLink}>
                                 <span>{content.orderButton}</span>
                             </a>
                         </div>

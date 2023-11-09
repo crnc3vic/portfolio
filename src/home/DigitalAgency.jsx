@@ -13,51 +13,16 @@ import Brand from "../elements/Brand";
 import CallAction from "../elements/callaction/CallAction";
 import TabOne from "../elements/tab/TabOne";
 import Helmet from "../component/common/Helmet";
+import content from "../Content.json";
+import { slickDot } from "../page-demo/script";
 
-const SlideList = [
-    {
-        textPosition: 'text-center',
-        bgImage: 'bg_image--21',
-        category: '',
-        title: 'Marketing',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    },
-    {
-        textPosition: 'text-center',
-        bgImage: 'bg_image--23',
-        category: '',
-        title: 'Development.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    },
-    {
-        textPosition: 'text-center',
-        bgImage: 'bg_image--22',
-        category: '',
-        title: 'UX Research.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    },
-    {
-        textPosition: 'text-center',
-        bgImage: 'bg_image--20',
-        category: '',
-        title: 'UX Research.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
-        buttonLink: '/contact'
-    }
-]
 
 class DigitalAgency extends Component{
     render(){
         const PostList = BlogContent.slice(0 , 3);
-        let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+        const SlideList = content.slides; 
+        let title = content.about.bigColumn.title;
+        let description = content.about.bigColumn.content;
         return(
             <Fragment> 
                 
@@ -99,8 +64,8 @@ class DigitalAgency extends Component{
                        <div className="row">
                            <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30">
-                                    <h2 className="title">Our Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">{content.services.title}</h2>
+                                    <p>{content.services.description}</p>
                                 </div>
                            </div>
                        </div>
@@ -116,8 +81,8 @@ class DigitalAgency extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--15">
-                                        <h2 className="title">Our Project</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        <h2 className="title">{content.portfolio.title}</h2>
+                                        <p>{content.portfolio.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +108,7 @@ class DigitalAgency extends Component{
                             <div className="row row--35">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-3.jpg" alt="About Images"/>
+                                        <img className="w-100" src={content.about.image} alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -172,43 +137,38 @@ class DigitalAgency extends Component{
                 {/* End Testimonial Area */}
 
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 pb--80 bg_color--1">
+                <div className="rn-blog-area pt--120 pb--140 bg_color--1" id="blog">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center service-style--3">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                            <div className="col-lg-6">
+                                <div className="section-title text-left">
+                                    <h2>{content.blog.title}</h2>
+                                    <p>{content.blog.description}</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt--60">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                                    <div className="blog blog-style--1 text-center">
-                                        <div className="thumbnail">
-                                            <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </a>
-                                        </div>
-                                        <div className="content">
-                                            <p className="blogtype">{value.category}</p>
-                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
-                                            <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                        <div className="row mt--55 mt_sm--30 rn-slick-dot slick-space-gutter--15 slickdot--20 row--0">
+                            <div className="col-lg-12">
+                                <Slider {...slickDot}>
+                                    {PostList.map((value , i ) => (
+                                        <div className="blog blog-style--1" key={i}>
+                                            <div className="thumbnail">
+                                                <a href="/blog-details">
+                                                    <img src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
+                                                </a>
+                                            </div>
+                                            <div className="content">
+                                                <p className="blogtype">{value.category}</p>
+                                                <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
+                                                <div className="blog-btn">
+                                                    <a className="rn-btn text-white" href="/blog-details">{content.blog.buttons.readMore}</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="view-more-btn mt--20 text-center">
-                                    <a className="rn-button-style--2 btn-solid" href="/blog"><span>View More</span></a>
-                                </div>
+                                    ))}
+                                </Slider>
                             </div>
-                        </div>
+                        </div>    
                     </div>    
                 </div>
                 {/* End Blog Area */}

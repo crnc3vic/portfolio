@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FiCheck } from "react-icons/fi";
+import content from "../../Content.json";
 
 class TabsOne extends Component{
     render(){
