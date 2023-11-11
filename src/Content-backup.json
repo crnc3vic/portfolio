@@ -34,7 +34,38 @@
       "name": "About",
       "link": "/about"
     },
-
+    {
+      "name": "Pages",
+      "link": "#pages",
+      "submenu": [
+        { "name": "Blog List", "link": "/blog" },
+        { "name": "Blog Details", "link": "/blog-details" },
+        { "name": "Service", "link": "/service" },
+        { "name": "Service Details", "link": "/service-details" },
+        { "name": "Portfolio", "link": "/portfolio" },
+        { "name": "Portfolio Details", "link": "/portfolio-details" },
+        { "name": "404", "link": "/404" }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "link": "#",
+      "submenu": [
+        { "name": "Portfolio", "link": "/portfolio" },
+        { "name": "Team", "link": "/team" },
+        { "name": "Service", "link": "/service" },
+        { "name": "Video Popup", "link": "/video-popup" },
+        { "name": "Progressbar", "link": "/progressbar" },
+        { "name": "Gallery", "link": "/gallery" },
+        { "name": "Counters", "link": "/counters" },
+        { "name": "Blog List", "link": "/blog" },
+        { "name": "Clint Logo", "link": "/clint-logo" },
+        { "name": "Contact Form", "link": "/contact-form" },
+        { "name": "Google Map", "link": "/google-map" },
+        { "name": "Columns", "link": "/columns" },
+        { "name": "Pricing Table", "link": "/pricing-table" }
+      ]
+    },
     {
       "name": "Contact",
       "link": "/contact"

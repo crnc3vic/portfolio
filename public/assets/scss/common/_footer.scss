@@ -42,8 +42,8 @@ Footer Styles
         z-index: 5;
         position: relative;
         &::after{
-            //content: "tryDO";
-            content: url(/assets/images/logo/big-logo.png);
+            content: "FWS";
+         //   content: url(/assets/images/logo/big-logo.png);
             position: absolute;
             right: 0;
             top: 50%;
