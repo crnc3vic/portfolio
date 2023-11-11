@@ -2,7 +2,7 @@
   "name": "trydo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://trydo.rainbowit.net",
+  "homepage": "https://frankfurt.services",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
@@ -87,7 +87,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -155,6 +157,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "terser-webpack-plugin": "^1.4.5"
   }
 }
