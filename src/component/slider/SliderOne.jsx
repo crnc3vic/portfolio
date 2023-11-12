@@ -6,7 +6,7 @@ class SliderOne extends Component {
   render() {
     return (
         <div className="slider-activation">
-            {/* Start Single Slide */}
+            {/* Start Single Slide 1 9 24 */}
             <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1" data-black-overlay="6">
                 <div className="container position-relative">
                     <div className="row">

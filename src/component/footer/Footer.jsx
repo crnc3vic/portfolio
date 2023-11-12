@@ -36,9 +36,9 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>{content.footer.columns.first.title}</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="/portfolio">{content.footer.columns.first.work}</a></li>
-                                                    <li><a href="/about">{content.footer.columns.first.about}</a></li>
-                                                    <li><a href="/contact">{content.footer.columns.first.contact}</a></li>
+                                                    <li><a href={content.footer.columns.first.firstUrl}>{content.footer.columns.first.first}</a></li>
+                                                    <li><a href={content.footer.columns.first.secondUrl}>{content.footer.columns.first.second}</a></li>
+                                                    <li><a href={content.footer.columns.first.thirdUrl}>{content.footer.columns.first.third}</a></li>
                                                 </ul>
                                             </div>
                                         </div>

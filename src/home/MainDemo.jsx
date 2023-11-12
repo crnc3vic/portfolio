@@ -25,9 +25,9 @@ class MainDemo extends Component{
         const PostList = BlogContent.slice(0 , 3);
         return(
             <Fragment> 
-                <Helmet pageTitle="Main Demo" />
+                <Helmet pageTitle={content.homepage.title} />
 
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname={content.name} />
 
                 {/* Start Slider Area   */}
                 <div className="slider-wrapper">
@@ -47,11 +47,13 @@ class MainDemo extends Component{
                    </div>
                 </div>
 
+                {/* Start Portfolio Area 
+
                 <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
             <div className="rn-slick-dot">
                 <div className="container">
                     <div className="row">
-                        {/* ... Section Title ... */}
+
                     </div>
                     <div className="row">
                         <div className="col-lg-12">
@@ -67,9 +69,7 @@ class MainDemo extends Component{
                                                 <div className="inner">
                                                     <p>{value.category}</p>
                                                     <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                                    <div className="portfolio-button">
-                                                        <a className="rn-btn" href="/portfolio-details">Case Study</a>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                             <Link className="link-overlay" to="/portfolio-details"></Link>
@@ -106,7 +106,7 @@ class MainDemo extends Component{
                 </div>
                 {/* End Testimonial Area */}
 
-               {/* Start Blog Area */}
+               {/* Start Blog Area 
                <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
                     <div className="container">
                         <div className="row align-items-end">

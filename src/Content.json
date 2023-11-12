@@ -3,7 +3,7 @@
   "description": "Building robust and scalable websites for your business",
   "logoLight": "/assets/images/logo/logo-fws.png",
   "logoDark": "/assets/images/logo/logo-fws-dark.png",
-  "headerBackground" : "/assets/images/bg/paralax/bg-image-3-overlay.jpg",
+  "headerBackground" : "assets/images/bg/bg-code-1.jpeg",
   "interActiveAgencyBackground": "bg_image--33",
   "orderButton": "Order a Website",
   "orderButtonLink":"/contact",
@@ -69,6 +69,7 @@
   "about": {
     "headerBackground" : "/assets/images/about/about-code-header.jpeg",
     "image": "/assets/images/about/about-dev.webp",
+    "image2": "/assets/images/about/dev-ffm-1.webp",
     "bigColumn": {
       "title": "About",
       "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
@@ -166,7 +167,7 @@
   "contact": {
     "title": "Contact Us",
     "description": "Get in touch with Frankfurt.services, your go-to web development team in Frankfurt am Main. We're here to help you build stunning, free business websites with affordable monthly maintenance. Reach out today to discuss your project and take the first step towards a powerful online presence.",
-    "image": "/assets/images/about/about-6.jpg"
+    "image": "/assets/images/about/contact-form-img.webp"
   },
   "portfolio": {
     "list": {
@@ -250,33 +251,33 @@
     "posts": [
       {
         "images": "01",
-        "title": "! Getting tickets to the big show",
-        "category": "Development"
+        "title": "HTML5: Structure your web content",
+        "category": "Web Development"
       },
       {
         "images": "02",
-        "title": "A big ticket gone to be an interesting",
-        "category": "Management"
+        "title": "CSS3: Style with new properties",
+        "category": "Web Design"
       },
       {
         "images": "03",
-        "title": "The Home of the Future Could Bebes",
-        "category": "Design"
+        "title": "JavaScript ES6: Modern scripting language",
+        "category": "Programming"
       },
       {
         "images": "04",
-        "title": "Getting tickets to the big show",
-        "category": "Development"
+        "title": "React.js: UI building made easy",
+        "category": "Frontend Framework"
       },
       {
         "images": "01",
-        "title": "A big ticket gone to be an interesting",
-        "category": "Management"
+        "title": "Node.js: JavaScript for the server",
+        "category": "Backend Technology"
       },
       {
         "images": "02",
-        "title": "The Home of the Future Could Bebes",
-        "category": "Design"
+        "title": "RESTful APIs: Connect client-server applications",
+        "category": "Integration"
       }
     ]
   },
@@ -287,14 +288,18 @@
     "columns": {
       "first": {
         "title": "Quick Links",
-        "work": "Work",
-        "about": "About",
-        "contact": "Contact"
+        "first": "Our service",
+        "firstUrl": "/service-details",
+        "second": "About",
+        "secondUrl": "/about",
+        "third": "Contact",
+        "thirdUrl": "/contact"
       },
       "second": {
         "contact": "Contact us",
         "email": "contact@frankfurt.services",
-        "phone": "01xxxyyy"
+        "phone": "015171038725",
+        "location": "Virtual - reach us anywhere"
       }
     }
   },
