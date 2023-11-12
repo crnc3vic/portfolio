@@ -29,10 +29,15 @@ const Testimonials = () => {
             <Tab key={testimonialKey}>
               <div className="testimonial-thumbnai">
                 <div className="thumb">
-                  <img
+             {/*      <img
                     src={`/assets/images/client/testimonial-${index + 1}.jpg`}
                     alt={`Testimonial ${index + 1}`}
-                  />
+          /> */}
+
+                             <img
+                    src={`/assets/images/client/default.png`}
+                    alt={`Testimonial ${index + 1}`}
+          /> 
                 </div>
               </div>
             </Tab>

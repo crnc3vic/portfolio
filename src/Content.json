@@ -9,15 +9,15 @@
   "orderButtonLink":"/contact",
 
   "partners": [
-    "/assets/images/brand/brand-01.png",
-    "/assets/images/brand/brand-02.png",
-    "/assets/images/brand/brand-03.png",
-    "/assets/images/brand/brand-04.png",
-    "/assets/images/brand/brand-05.png",
-    "/assets/images/brand/brand-06.png",
-    "/assets/images/brand/brand-02.png",
-    "/assets/images/brand/brand-03.png",
-    "/assets/images/brand/brand-04.png"
+    "/assets/images/brand/Cloudflare-Logo.png",
+    "/assets/images/brand/nodejs.png",
+    "/assets/images/brand/wordpress-logo.png",
+    "/assets/images/brand/html-logo.png",
+    "/assets/images/brand/css-logo.webp",
+    "/assets/images/brand/next-logo.png",
+    "/assets/images/brand/php-logo.png",
+    "/assets/images/brand/python-logo.png",
+    "/assets/images/brand/sql-logo.png"
   ],
 
   "menu": [
@@ -223,21 +223,22 @@
   },
   "testimonials": {
     "testimonial1": {
-      "content": "I am extremely satisfied with the services provided by Frankfurt Web Services. They created a stunning website for my business that perfectly represents our brand. The attention to detail and professionalism shown by the team was exceptional.",
-      "author": "John Smith",
-      "position": "CEO, ABC Company"
+      "content": "Ich bin außerordentlich zufrieden mit den Dienstleistungen, die von Frankfurt Web Services bereitgestellt wurden. Sie haben eine umwerfende Webseite für mein Geschäft erstellt, die unsere Marke perfekt repräsentiert. Die Liebe zum Detail und der Professionalismus des Teams waren außergewöhnlich.",
+      "author": "Maximilian Becker",
+      "position": "Geschäftsführer, Beier GmbH"
     },
     "testimonial2": {
-      "content": "Working with Frankfurt Web Services has been a game-changer for my online presence. Their custom web design service transformed my outdated website into a modern and user-friendly platform. I highly recommend their expertise to anyone seeking professional web development solutions.",
-      "author": "Emily Johnson",
-      "position": "Marketing Manager, XYZ Corporation"
+      "content": "Die Zusammenarbeit mit Frankfurt Web Services war ein Wendepunkt für meine Online-Präsenz. Ihr maßgeschneiderter Webdesign-Service hat meine veraltete Webseite in eine moderne und benutzerfreundliche Plattform verwandelt. Ich kann ihre Expertise jedem empfehlen, der professionelle Webentwicklungslösungen sucht.",
+      "author": "Hannah Schröder",
+      "position": "Marketingleiterin, Löwenstein AG"
     },
     "testimonial3": {
-      "content": "I couldn't be happier with the results achieved by Frankfurt Web Services. Their front-end development skills helped us create a visually appealing and engaging user interface for our web application. Their commitment to quality and timely delivery is commendable.",
-      "author": "Michael Anderson",
-      "position": "CTO, QWERTY Tech"
+      "content": "Mit den Ergebnissen, die durch Frankfurt Web Services erzielt wurden, könnte ich nicht glücklicher sein. Ihre Fähigkeiten in der Front-End-Entwicklung halfen uns, eine visuell ansprechende und fesselnde Benutzeroberfläche für unsere Webanwendung zu gestalten. Ihr Engagement für Qualität und pünktliche Lieferung ist lobenswert.",
+      "author": "Lukas Müller",
+      "position": "Technischer Leiter, Innovatech Solutions"
     }
   },
+  
   "blog": {
     "title": "Latest news",
     "description": "Stay Informed with Our Web Dev Blog",
