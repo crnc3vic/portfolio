@@ -9,19 +9,20 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-
+import content from "../Content.json";
 
 class About extends Component{
     render(){
-        let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.';
+        const { about, teamSection, social } = content;
+
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='About' />
+                <PageHelmet pageTitle={about.bigColumn.title} />
 
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname={content.logoLight} />
+                
                 {/* Start Breadcrump Area */}
-                <Breadcrumb title={'About'}   />
+                <Breadcrumb title={about.bigColumn.title}  image={content.about.headerBackground} />
                 {/* End Breadcrump Area */}
 
                 {/* Start About Area  */}
@@ -31,26 +32,26 @@ class About extends Component{
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-3.jpg" alt="About Images"/>
+                                        <img className="w-100" src={about.image} alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="about-inner inner">
                                         <div className="section-title">
-                                            <h2 className="title">{title}</h2>
-                                            <p className="description">{description}</p>
+                                            <h2 className="title">{about.bigColumn.title}</h2>
+                                            <p className="description">{about.bigColumn.content}</p>
                                         </div>
                                         <div className="row mt--30">
                                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                                 <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    <h3 className="title">{about.smallColumnLeft.title}</h3>
+                                                    <p>{about.smallColumnLeft.content}</p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                                 <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    <h3 className="title">{about.smallColumnRight.title}</h3>
+                                                    <p>{about.smallColumnRight.content}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,6 +62,7 @@ class About extends Component{
                     </div>
                 </div>
                 {/* End About Area  */}
+
 
                  {/* Start CounterUp Area */}
                  <div className="rn-counterup-area pb--120 bg_color--1">
@@ -82,90 +84,58 @@ class About extends Component{
                     <div className="inner">
                         <div className="content-wrapper">
                             <div className="content">
-                                <h4 className="theme-gradient">Find Your Work Now</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that.</p>
-                                <a className="rn-btn btn-white" href="/about">Get Started</a>
+                                <h4 className="theme-gradient">{content.about.column2.title}</h4>
+                                <p>{content.about.column2.content}</p>
+                                <a className="rn-btn btn-white" href={content.about.column2.buttonUrl}>{content.about.column2.buttonTitle}</a>
                             </div>
                         </div>
                         <div className="thumbnail">
                             <div className="image">
-                                <img src="/assets/images/about/finding-us-01.png" alt="Finding Images"/>
+                                <img src={content.about.column2.backgroundImage} alt={content.about.column2.metaDescription}/>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* End Finding Us Area  */}
 
-                {/* Start Team Area  */}
+
+                {/* Start Team Area  
+            
                 <div className="rn-team-area bg_color--1 ptb--120">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--25">
-                                    <h2 className="title">Skilled Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">{teamSection.title}</h2>
+                                    <p>{teamSection.description}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-01.jpg" alt="Blog Images"/>
+                            {teamSection.team.map((member, index) => (
+                                <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div className="team">
+                                        <div className="thumbnail">
+                                            <img className="w-100" src={`/assets/images/team/team-${member.images}.jpg`} alt="Team Images"/>
+                                        </div>
+                                        <div className="content">
+                                            <h4 className="title">{member.title}</h4>
+                                            <p className="designation">{member.designation}</p>
+                                        </div>
+                                        <ul className="social-icon">
+                                            {member.socialNetwork.map((social, i) => (
+                                                <li key={i}>
+                                                    <a href={social.url}>
+                                                        {social.icon === 'facebook' && <FaFacebookF />}
+                                                        {social.icon === 'linkedin' && <FaLinkedinIn />}
+                                                        {social.icon === 'twitter' && <FaTwitter />}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <div className="content">
-                                        <h4 className="title">Jone Due</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
                                 </div>
-                            </div>
-                            {/* End Single Team  */}
-
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-02.jpg" alt="Blog Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">BM. Alamin</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* End Single Team  */}
-
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-03.jpg" alt="Blog Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">Jone Due</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* End Single Team  */}
-
+                            ))}
                         </div>
                     </div>
                 </div>

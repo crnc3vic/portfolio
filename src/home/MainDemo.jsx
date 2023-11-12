@@ -21,6 +21,7 @@ import content from "../Content.json";
 const portfolioList = Object.values(content.portfolio.list);
 class MainDemo extends Component{
     render(){
+        
         const PostList = BlogContent.slice(0 , 3);
         return(
             <Fragment> 

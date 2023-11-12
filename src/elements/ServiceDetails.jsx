@@ -4,6 +4,7 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
+import Breadcrumb from "./common/Breadcrumb";
 import content from "../Content.json";
 
 class ServiceDetails extends Component {
@@ -68,20 +69,8 @@ class ServiceDetails extends Component {
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname={content.logoLight} />
 
-                {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--1" data-black-overlay="6">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">{service.pagetitle}</h2>
-                                    <p>{service.description}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Breadcrump Area */}
+                <Breadcrumb title={content.service.pagetitle}  image={content.service.headerBackground} />
+
 
                 {/* Start Page Wrapper */}
                 <div className="rn-service-details ptb--120 bg_color--1">

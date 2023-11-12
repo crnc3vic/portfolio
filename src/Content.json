@@ -67,7 +67,8 @@
   ],
 
   "about": {
-    "image": "/assets/images/about/about-3.jpg",
+    "headerBackground" : "/assets/images/about/about-code-header.jpeg",
+    "image": "/assets/images/about/about-dev.webp",
     "bigColumn": {
       "title": "About",
       "content": "Based in Frankfurt am Main, we are a leading web design agency dedicated to creating captivating websites. Our talented team combines artistic flair with technical expertise to craft user-friendly, responsive, and results-driven websites. We`re committed to making your digital presence shine, ensuring your brand stands out online."
@@ -95,6 +96,15 @@
           "pct": "57"
         }
       }
+
+    },
+    "column2": {
+      "title":"Let's Build Something Great Together",
+      "content":"Ready to elevate your online presence? Our team is eager to learn about your project and help you achieve digital excellence. Reach out to us, and let’s turn your dream project into an impactful reality.",
+      "buttonTitle": "Get in touch",
+      "buttonUrl": "/contact",
+      "backgroundImage": "/assets/images/about/about-developers2.webp",
+      "metaDescription": "Frankfurt business website"
     },
     "smallColumnLeft": {
       "title": " Our philosophy",
@@ -139,14 +149,17 @@
     "service": {
       "pagetitle": "Website Development",
       "description": "Elevate your online presence with Frankfurt's premier web development services. Tailored solutions, cutting-edge design, and powerful functionality await your digital success.",
-      "firstParagraph": {
-        "image": "/assets/images/service/service-ffm-1.webp",
-        "column": "<h2>Comprehensive Website Development</h2><p>At Frankfurt Web Services, we understand that a website is more than just a collection of pages on the internet. It’s a digital embodiment of your brand and often the first point of contact between you and your potential customers. That's why we focus on developing custom websites that are not only visually stunning but also functionally robust, ensuring an exceptional user experience from the landing page to checkout.</p><p>Our team of dedicated developers utilizes the latest technologies and frameworks to deliver responsive, fast-loading, and secure websites. We pride ourselves on our ability to bring your vision to life, whether it's a simple brochure website, an intricate e-commerce platform, or a feature-rich web application.</p><p>We also emphasize SEO-friendly coding practices to ensure that your site ranks well on search engines, connecting you to a wider audience. Let us help you make an impactful online statement that speaks volumes about your brand's quality and values.</p>"
-      },
-      "secondParagraph": {
-        "image": "/assets/images/service/service-ffm-2.webp",
-        "column": "<h2>Front-end and Back-end Excellence</h2><p>We split our web development process into two main focus areas: front-end and back-end development. Our front-end team pays meticulous attention to the user interface and user experience design. By using advanced CSS, HTML5, and JavaScript techniques, we ensure that your website is accessible, intuitive, and engaging across all devices and platforms.</p><p>Meanwhile, our back-end developers work tirelessly behind the scenes to provide the server-side solutions that make your website tick. From database interactions to API integrations, our back-end ensures that your website's performance is seamless, secure, and scalable. Together, these two halves create a cohesive and powerful web solution that stands the test of time.</p><p>No matter the complexity of your project, our team is equipped to handle it with precision and care. By partnering with us, you gain access to years of expertise and a commitment to excellence that will propel your online presence forward.</p>"
-      }
+      "headerBackground": "/assets/images/about/header-glasses-bg-1.webp",
+
+"firstParagraph": {
+    "image": "/assets/images/about/web-development-column-1.jpeg",
+    "column": "<h2>Expert Website Development Services</h2><p>At Frankfurt Web Services, we create more than just websites. We build a digital representation of your brand, your first connection with potential customers. Our custom-designed websites are not only beautiful but also high-performing and user-friendly. From the first click to final checkout, we ensure a seamless online experience.</p><p>Our skilled developers use the latest technology to make websites that are fast, responsive, and secure. Whether you need a simple site, a complex online store, or an advanced web application, we make your vision a reality. Plus, our SEO-smart coding helps your site rank better in search engines, reaching more people.</p><p>Choose us to craft a website that showcases the quality and values of your brand in the digital world.</p>"
+  },
+  "secondParagraph": {
+    "image": "/assets/images/service/service-ffm-2.webp",
+    "column": "<h2>Front-end and Back-end Development Mastery</h2><p>Our web development is divided into two key areas: front-end and back-end. The front-end team focuses on making your website look great and easy to use. We use the latest in CSS, HTML5, and JavaScript to ensure your site works well on all devices and platforms.</p><p>Our back-end team takes care of the technical side, ensuring your website runs smoothly. They handle everything from databases to integrating other services. This makes sure your website is fast, safe, and can grow with your business. Together, these aspects create a complete and reliable online solution.</p><p>With our experienced team, any project, no matter how complex, is in good hands. Working with us means getting the benefit of our expertise and a dedication to quality that elevates your web presence.</p>"
+  }
+
     },
     
 
@@ -298,7 +311,7 @@
   "team": [
     {
       "images": "01",
-      "title": "Jone Due",
+      "title": "Jone Duje",
       "designation": "Sr. Web Developer",
       "socialNetwork": [
         {
