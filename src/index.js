@@ -42,7 +42,7 @@ import PortfolioDetails from "./elements/PortfolioDetails";
 import Blog from "./elements/Blog";
 import BlogDetails from "./elements/BlogDetails";
 import error404 from "./elements/error404";
-
+import Subscription from "./blocks/Subscription";
 
 // Blocks Layout
 
@@ -111,6 +111,8 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/google-map`} component={GoogleMap}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/subscription`} component={Subscription}/>
+
 
 
                         

@@ -1,93 +1,66 @@
-import React , {useState} from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import content from "../../Content.json";
 
 const Result = () => {
     return (
-        <p className="success-message">Your Message has been successfully sent. I will contact you soon.</p>
-    )
-}
-function ContactForm({props}) {
-    const [ result,showresult ] = useState(false);
+        <p className="success-message">{content.contact.form.contactSendMessage}</p>
+    );
+};
 
+function ContactForm() {
+    const [result, setResult] = useState(false);
+    const form = useRef(null);
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs
-        .sendForm(
-            'service_p4x3hv8', 
-            'template_jgfr42f', 
-            e.target, 
-            'user_jrfTH2e0Ely35ZCVFdT9S'
-        )
-        .then((result) => {
-            console.log(result.text);
-            }, 
-            (error) => {
-                console.log(error.text);
-            }
-        );
-        e.target.reset();
-        showresult(true);
+    
+        emailjs.sendForm('frankfurt.services', 'template_wmv8wec', form.current, 'vg5fM8f55LTFGGqqm')
+          .then((result) => {
+              console.log(result.text);
+              setResult(true);
+              setTimeout(() => {
+                  setResult(false);
+              }, 5000);
+          }, (error) => {
+              console.log(error.text);
+          });
     };
 
-    setTimeout(() => {
-        showresult(false);
-    }, 5000);
-
     return (
-        <form action="" onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
             <div className="rn-form-group">
+                <label>Name</label>
                 <input 
                 type="text"
-                name="fullname"
-                placeholder="Your Name"
+                name="user_name"
                 required
                 />
             </div>
 
             <div className="rn-form-group">
+                <label>Email</label>
                 <input 
                 type="email"
-                name="email"
-                placeholder="Your Email"
+                name="user_email"
                 required
                 />
             </div>
 
             <div className="rn-form-group">
-                <input 
-                type="text"
-                name="phone"
-                placeholder="Phone Number"
-                required
-                />
-            </div>
-
-            <div className="rn-form-group">
-                <input 
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-                />
-            </div>
-            
-            <div className="rn-form-group">
+                <label>Message</label>
                 <textarea 
                 name="message"
-                placeholder="Your Message"
                 required
-                >
-                </textarea>
+                ></textarea>
             </div>
 
             <div className="rn-form-group">
-                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit Now</button>
+                <button className="rn-button-style--2 btn-solid" type="submit">Send</button>
             </div> 
 
-            <div className="rn-form-group">
-                {result ? <Result /> : null}
-            </div> 
+            {result && <Result />}
         </form>
-    )
+    );
 }
+
 export default ContactForm;

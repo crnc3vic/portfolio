@@ -167,7 +167,11 @@
   "contact": {
     "title": "Contact Us",
     "description": "Get in touch with Frankfurt.services, your go-to web development team in Frankfurt am Main. We're here to help you build stunning, free business websites with affordable monthly maintenance. Reach out today to discuss your project and take the first step towards a powerful online presence.",
-    "image": "/assets/images/about/contact-form-img.webp"
+    "image": "/assets/images/about/contact-form-img.webp",
+    "form": {
+      "name": "Your name",
+    "contactSendMessage": "Your Message has been successfully sent. I will contact you soon."
+  }
   },
   "portfolio": {
     "list": {
